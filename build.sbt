@@ -2,7 +2,7 @@ name := "myprojects"
 
 version := "1.0"
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.11.0"
 
 val akkaVersion = "2.4.10"
 
@@ -17,3 +17,4 @@ libraryDependencies += "com.typesafe.akka" % "akka-http_2.11" % "10.0.1"
 
 libraryDependencies += "com.typesafe.akka" % "akka-http-jackson_2.11" % "10.0.1"
 
+scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
