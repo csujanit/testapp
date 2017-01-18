@@ -1,3 +1,4 @@
+enablePlugins(JavaAppPackaging)
 
 name := "myprojects"
 
@@ -6,8 +7,6 @@ version := "1.0"
 scalaVersion := "2.11.0"
 
 val akkaVersion = "2.4.10"
-
-enablePlugins(JavaAppPackaging)
 
 libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % akkaVersion
 
@@ -21,3 +20,4 @@ libraryDependencies += "com.typesafe.akka" % "akka-http-jackson_2.11" % "10.0.1"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
+Revolver.settings
