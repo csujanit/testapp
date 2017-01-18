@@ -13,8 +13,8 @@ import scala.concurrent.{ExecutionContext, ExecutionContextExecutor}
 
 
 
-object TestApp {
-  def main(args:Array[String]): Unit ={
+object TestApp extends  App{
+  {
     implicit  val system = ActorSystem()
     implicit  val materializer  = ActorMaterializer()
     implicit  val executionContext = system.dispatcher
