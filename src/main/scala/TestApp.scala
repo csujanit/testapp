@@ -1,9 +1,7 @@
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
-import akka.stream.ActorMaterializer
 import akka.http.scaladsl.server.Directives._
-
-import scala.concurrent.{ExecutionContext, ExecutionContextExecutor}
+import akka.stream.ActorMaterializer
 
 
 /**
