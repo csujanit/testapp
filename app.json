@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "igene",
+=======
+  "name": "testapp",
+>>>>>>> d9f0e4bef739173a84c4a91313fe1a8464c92764
   "description": "Simple (micro)service which demonstrates how to accomplish tasks typical for REST service using Akka HTTP.",
   "website": "https://nothingtest.com",
   "success_url": "/ip/8.8.8.8"
