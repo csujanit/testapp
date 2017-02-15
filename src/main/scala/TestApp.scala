@@ -15,7 +15,9 @@ object TestApp extends  App{
     implicit  val executionContext = system.dispatcher
     val route = {
       path("test"){
-        complete("OK")
+        get{
+        complete("OK")          
+      }
       }
     }
     Http().bindAndHandle(route,"0.0.0.0",8080)
