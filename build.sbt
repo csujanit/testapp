@@ -1,6 +1,6 @@
 enablePlugins(JavaAppPackaging)
 
-name := "myprojects"
+name := "igene"
 
 version := "1.0"
 
