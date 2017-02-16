@@ -3,6 +3,7 @@ import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives._
 import akka.stream.ActorMaterializer
 import akka.event.Logging
+import scala.util.Properties
 
 
 /**
@@ -14,6 +15,7 @@ object TestApp extends  App{
     implicit  val system = ActorSystem()
     implicit  val materializer  = ActorMaterializer()
     implicit  val executionContext = system.dispatcher
+    val port = Properties.envOrElse("PORT", "8080").toInt
     val logger = Logging(system,getClass)
     val route = {
       {
@@ -24,6 +26,6 @@ object TestApp extends  App{
       }
       }
     }
-    Http().bindAndHandle(route,"0.0.0.0",8080)
+    Http().bindAndHandle(route,interface="0.0.0.0",port = port)
   }
 }
