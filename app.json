@@ -2,5 +2,5 @@
   "name": "igene",
   "description": "Simple (micro)service which demonstrates how to accomplish tasks typical for REST service using Akka HTTP.",
   "website": "https://nothingtest.com",
-  "success_url": "/ip/8.8.8.8"
+  "success_url": "/test"
 }

@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/igene 
+web: target/universal/stage/bin/igene -Dhttp.port=$PORT
